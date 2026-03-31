@@ -1,0 +1,157 @@
+.container {
+     width: 100%;
+     max-width: 420px;
+}
+
+.box {
+     background: #fff;
+     padding: 35px 25px;
+     border-radius: 20px;
+     text-align: center;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+     width: 100%;
+}
+
+.title {
+     font-size: 35px;
+     font-weight: 700;
+     color: #6f00ff;
+     margin-bottom: 5px;
+}
+
+.subtitle {
+     color: #555;
+     margin-bottom: 20px;
+}
+
+/* Tabs */
+.tablogin {
+     display: flex;
+     margin-bottom: 20px;
+     border-radius: 10px;
+     overflow: hidden;
+}
+
+.tab {
+     flex: 1;
+     padding: 12px;
+     background: #eee;
+     border: none;
+     cursor: pointer;
+     font-size: 16px;
+}
+
+.tab.active {
+     background: #6f00ff;
+     color: #fff;
+}
+
+/* Forms */
+.form {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+
+.form input {
+     padding: 14px;
+     margin: 8px 0;
+     border-radius: 10px;
+     border: 1px solid #ccc;
+     font-size: 15px;
+     background: #FFF;
+     color:#000;
+}
+
+.btn {
+     padding: 14px;
+     background: #6f00ff;
+     color: white;
+     border: none;
+     border-radius: 10px;
+     margin-top: 10px;
+     cursor: pointer;
+     font-size: 17px;
+     transition: 0.2s;
+}
+
+.btn:hover {
+     opacity: 0.9;
+}
+
+/* --------------------------------- */
+/* RESPONSIVE DESIGN */
+/* --------------------------------- */
+
+/* For small mobiles */
+@media (max-width: 480px) {
+     .box {
+          padding: 25px 18px;
+     }
+
+     .title {
+          font-size: 30px;
+     }
+
+     .tab {
+          font-size: 14px;
+          padding: 10px;
+     }
+
+     .form input {
+          font-size: 14px;
+          padding: 12px;
+     }
+
+     .btn {
+          font-size: 15px;
+          padding: 12px;
+     }
+}
+
+/* For tablets */
+@media (min-width: 768px) {
+     .box {
+          max-width: 450px;
+     }
+
+     .title {
+          font-size: 40px;
+     }
+}
+
+/* For desktops */
+@media (min-width: 1024px) {
+     .box {
+          max-width: 420px;
+     }
+}
+
+
+.acc {
+     padding-top: 8px;
+}
+
+.signtxt {
+     color: #6f00ff;
+     padding-left: 5px;
+     cursor: pointer;
+}
+
+.head {
+     font-size: 22px;
+}
+
+.logo {
+
+     position: relative;
+     top: 25px;
+     text-align: center;
+
+}
+
+.logoimg {
+     width: 70px;
+     border-radius: 50%;
+     border: 5px solid #FFF;
+}

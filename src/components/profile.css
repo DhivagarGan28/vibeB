@@ -1,0 +1,154 @@
+.profile-page {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  top: 70px;
+  position: relative;
+}
+
+/* Cover Photo */
+.cover-photo {
+  position: relative;
+}
+
+.cover-photo img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.profile-photo-wrappers{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -50px;
+  left: 0px;
+}
+.profile-photo-wrappers img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.profile-photo-wrapper {
+  position: absolute;
+  bottom: -50px;
+  left: 30px;
+}
+.profile-photos {
+  width: 120px;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  cursor: pointer;
+}
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+/* Profile Info */
+.profile-info {
+  padding: 70px 20px 20px;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.bio {
+  color: gray;
+  margin: 5px 0;
+}
+
+.edit-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #000;
+}
+
+.tabs .active {
+  border-bottom: 3px solid #1877f2;
+  color: #1877f2;
+  font-weight: bold;
+}
+
+/* Friends Section */
+.friends-section {
+  padding: 20px;
+}
+
+.friends-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.friend-card, .friend-cards {
+  text-align: center;
+}
+
+.friend-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.friend-cards img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.friend-card, .friend-cards p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Posts Section */
+.posts-section {
+  padding: 20px;
+}
+
+.post-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.profileimgedit{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  text-align: right;
+  color: #1d1d1d;
+  cursor: pointer;
+}

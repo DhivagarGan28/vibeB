@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  width: 100%;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6f00ff, #0099ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* important for mobile */
+}
