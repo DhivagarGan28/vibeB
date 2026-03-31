@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { Navigate } from "react-router-dom";
 import { setUser } from "../userSlice";
 import { ToastProvider, useToast } from "./toast";
+import logo from '../assets/images/vibeb-logo.jpg'
 const LoginSignup = () => {
   const token = localStorage.getItem("user");
   const [activeTab, setActiveTab] = useState("login");
@@ -91,7 +92,7 @@ if (token) return <Navigate to="/home" />;
         <div className="logo">
           <img
             className="logoimg"
-            src="src/assets/images/vibeb-logo.jpg"
+            src={logo}
             alt="Logo"
           />
         </div>
