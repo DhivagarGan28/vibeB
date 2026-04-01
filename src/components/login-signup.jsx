@@ -32,7 +32,7 @@ const LoginSignup = () => {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/auth/login", {
+      const response = await fetch("https://vibeb-backend.onrender.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -51,7 +51,7 @@ const LoginSignup = () => {
         navigate("/home");
       } else {
         push({ type: 'error', title: 'Failed', message: "Login Failed! Please try again" })
-      }
+      } 
     } catch (err) {
       console.log(err);
       push({ type: 'error', title: 'Failed', message: "Login Failed! Please try again" })
@@ -60,7 +60,7 @@ const LoginSignup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/auth/signup", {
+      const response = await fetch("https://vibeb-backend.onrender.com/api/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

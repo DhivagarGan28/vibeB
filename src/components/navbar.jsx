@@ -38,7 +38,7 @@ function Navbar() {
 
   const collectNotification = async () =>{
     try {
-      const response =  await fetch("http://localhost:5000/api/auth/friend-requests", {
+      const response =  await fetch("https://vibeb-backend.onrender.com/api/auth/friend-requests", {
       method: "POST",
       headers: {
           "Content-Type": "application/json",
@@ -58,7 +58,7 @@ function Navbar() {
 
   const acceptFriend = async (id) =>{
     try {
-      const response =  await fetch("http://localhost:5000/api/auth/accept-friend-request", {
+      const response =  await fetch("https://vibeb-backend.onrender.com/api/auth/accept-friend-request", {
         method: "POST",
         headers: {
         "Content-Type": "application/json",

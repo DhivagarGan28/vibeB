@@ -21,7 +21,7 @@ const [selectedUser, setSelectedUser] = useState(null);
 
      const loadAllfriends = async () =>{
           try {
-               const result = await fetch(`http://localhost:5000/api/auth/getallUserdata/${userdts.id}`)
+               const result = await fetch(`https://vibeb-backend.onrender.com/api/auth/getallUserdata/${userdts.id}`)
                const data = await result.json();
                setAllList(data.users)
           } catch (error) {
@@ -34,7 +34,7 @@ const [selectedUser, setSelectedUser] = useState(null);
      const [open, setOpen] = useState(false);
      const sendRequest = async (receiverId) => {
           try {
-               const response =  await fetch("http://localhost:5000/api/auth/send-friend-request", {
+               const response =  await fetch("https://vibeb-backend.onrender.com/api/auth/send-friend-request", {
                method: "POST",
                headers: {
                     "Content-Type": "application/json",

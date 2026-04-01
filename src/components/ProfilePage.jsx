@@ -34,7 +34,7 @@ export default function ProfilePage() {
   }, [userdts.id]);
   const fetchFriends = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/auth/${userdts.id}`);
+        const res = await fetch(`https://vibeb-backend.onrender.com/api/auth/${userdts.id}`);
         const data = await res.json();
         setFriends(data.friends);
         setBio(data.bio)
@@ -46,7 +46,7 @@ export default function ProfilePage() {
     setViewPro(true);
     setbtn(false);
       try {
-        const res = await fetch(`http://localhost:5000/api/auth/getdata/${userdts.id}`);
+        const res = await fetch(`https://vibeb-backend.onrender.com/api/auth/getdata/${userdts.id}`);
         const data = await res.json();
         setForm(data.user)
       } catch (error) {
@@ -73,7 +73,7 @@ export default function ProfilePage() {
 
   const profileupdate = async (id) =>{
     try {
-      const response = await fetch(`http://localhost:5000/api/auth/profileupdate/${id}`, {
+      const response = await fetch(`https://vibeb-backend.onrender.com/api/auth/profileupdate/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -118,7 +118,7 @@ export default function ProfilePage() {
         const formData = new FormData();
         formData.append("avatar", file);
 
-        const response = await fetch(`http://localhost:5000/api/auth/upload-avatar/${user_id}`, {
+        const response = await fetch(`https://vibeb-backend.onrender.com/api/auth/upload-avatar/${user_id}`, {
         method: "POST",
         body: formData,
       });
